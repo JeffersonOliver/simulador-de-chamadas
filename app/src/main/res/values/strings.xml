@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Simulando Chamada 1.0</string>
+
+    <string name="txtemail">txtemail</string>
+    <string name="txtsenha">txtsenha</string>
+    <string name="senha">senha</string>
+    <string name="email">email</string>
+    <string name="btncadastro">btncadastro</string>
+
+
+    <string name="txtcadastro1">txtcadastro1</string>
+    <string name="txtemail1">txtemail1</string>
+    <string name="email1">email1</string>
+    <string name="senha1">senha1</string>
+    <string name="senha2">senha2</string>
+    <string name="txtsenha2">txtsenha2</string>
+    <string name="btncadastrar1">btncadastrar1</string>
+
+
+    <string name="display">display</string>
+    <string name="btn1">btn1</string>
+    <string name="btn2">btn2</string>
+    <string name="btn3">btn3</string>
+    <string name="btn4">btn4</string>
+    <string name="btn5">btn5</string>
+    <string name="btn6">btn6</string>
+    <string name="btn7">btn7</string>
+    <string name="btn8">btn8</string>
+    <string name="btn9">btn9</string>
+    <string name="btnestrela">btnestrela</string>
+    <string name="btnjogo">btnjogo</string>
+    <string name="btn0">btn0</string>
+    <string name="btnp">btnp</string>
+    <string name="btnligar">btnligar</string>
+
+
+
+</resources>
