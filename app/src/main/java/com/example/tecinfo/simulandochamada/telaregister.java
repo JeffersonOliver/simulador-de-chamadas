@@ -1,5 +1,6 @@
 package com.example.tecinfo.simulandochamada;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,8 @@ public class telaregister extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telaregister);
+
+        meusDados = getSharedPreferences(mypreference, Context.MODE_PRIVATE);
 
         final EditText email1 = findViewById(R.id.email1);
         final EditText senha1 = findViewById(R.id.senha1);

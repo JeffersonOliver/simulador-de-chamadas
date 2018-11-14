@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         meusDados = getSharedPreferences(mypreference, Context.MODE_PRIVATE);
 
-        Button btnlogin = findViewById(R.id.btnlogin);
-        TextView btnregistro = findViewById(R.id.btnregistro);
+        final Button btnlogin = findViewById(R.id.btnlogin);
+        final Button btnregistro = findViewById(R.id.btnregistro);
         final EditText email = findViewById(R.id.email);
-        EditText senha = findViewById(R.id.senha);
+        final EditText senha = findViewById(R.id.senha);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,21 +44,26 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this,
                                 tela_chamadas.class);
                         startActivity(intent);
-                    } else {
+                    } else  {
                         Toast.makeText(getApplicationContext(),
                                 "E-mail ou Senha inválidos !", Toast.LENGTH_LONG).show();
-                    }else{
-                        Toast.makeText(getApplicationContext(),
-                                "Nâo existem cadastros !", Toast.LENGTH_LONG).show();
                     }
 
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            "Nâo existem cadastros !", Toast.LENGTH_LONG).show();
                 }
             }
 
         });
 
-
-
-
+        btnregistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, telaregister.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
